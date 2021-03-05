@@ -3,7 +3,6 @@ function sum(a, b) { //eslint-disable-line
     let summation=[];
     console.log(summation[0]);
     console.log(summation[1]);
-    summation=[];
     let sum1=a+b;
     summation[0]=sum1;
     summation[1]='The sum of '+a+' and '+b+' is '+ sum1+'.';
@@ -18,13 +17,6 @@ testSum(4, 7);
 // @@ -31,53 +34,83 @@ and the second element is a string that EXACTLY follows this example and uses th
 // Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
-// Write your code here
-// function multiply(a, b) { //eslint-disable-line
-//     let multiplication=[a*b,'The product of 5 and 9 is 45.'];
-//     console.log(multiplication[0]);
-//     console.log(multiplication[1]);
-// return multiplication;
-// }multiply(5,9);
 function multiply(a, b) { //eslint-disable-line
     let multiplication=[];
     let multi=a*b;
@@ -64,7 +56,6 @@ let theSum=sum(a,b)[0];
 let total=sum(theSum,c)[0];
 let multi1=multiply(a,b)[0];
 let multi2=multiply(multi1,c)[0];
-multi1=multiply(a,b)[0];
 sumwithmultipy[0]=total;
 sumwithmultipy[1]=multi2;
 sumwithmultipy[2]=a+' and '+b+' and '+c+' sum to '+total +'.';
