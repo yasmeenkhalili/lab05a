@@ -124,7 +124,6 @@ function multiplyArray(multArr) { //eslint-disable-line
     cross[1]='The numbers '+x+','+y+','+z+' have a product of '+ finalCross+'.';
     console.log(cross);
 return cross;
-
 }
 // Here is the test for multiplyArray(); uncomment it to run it
 testMultiplyArray(testArray);
