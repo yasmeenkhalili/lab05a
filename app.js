@@ -30,30 +30,6 @@ return multiplication;
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
-/////////////////////////////////////
-/* Problem 2
-Write a function called multiply() that takes in two numbers as arguments and returns an array
-where the first element is the product of those numbers, 
-and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
-
-"The product of 5 and 9 is 45."
-
-Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
-
-// Write your code here
-function multiply(a, b) { //eslint-disable-line
-    let multiplication=[];
-    let multi=a*b;
-    multiplication[0]=multi;
-    multiplication[1]='The product of '+a+' and '+b+' is '+multi+ '.';
-    console.log(multiplication);
-return multiplication;
-}
-
-
-// Here is the test for multiply(); uncomment it to run it
-testMultiply(5,9);
-
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
 /////////////////////////////////////
@@ -108,8 +84,6 @@ You're going to have to be resourceful to figure out how to do this.
 However, you may continue to use the + operator for string concatenation.
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 // Test this function by hand in the console to get it working, 
-// and when you think it is finished, uncomment the call for the testSumArray() function and 
-// see if the test passes.*/
 
 
 
@@ -117,11 +91,20 @@ Test this function by hand in the console to get it working, and when you think 
 var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-
+    let addition=[];
+    let firstSum=sum((sumArr[0]),(sumArr[1]))[0];
+    let finalSum=sum((firstSum),(sumArr[2]))[0];
+    addition[0]=finalSum;
+    let x=sumArr[0];
+    let y=sumArr[1];
+    let z=sumArr[2];
+    addition[1]=x+','+y+','+z+' was passed in as an array of numbers, and '+ finalSum+' is their sum.';
+    console.log(addition);
+return addition;
 }
 
 // Here is the test for sumArray(); uncomment it to run it
-// testSumArray(testArray);
+testSumArray(testArray);
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 /////////////////////////////////////
 /* Problem 5
