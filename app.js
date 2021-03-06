@@ -114,9 +114,20 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
+    let cross=[];
+    let firstCross=multiply((multArr[0]),(multArr[1]))[0];
+    let finalCross=multiply((firstCross),(multArr[2]))[0];
+    cross[0]=finalCross;
+    let x=multArr[0];
+    let y=multArr[1];
+    let z=multArr[2];
+    cross[1]='The numbers '+x+','+y+','+z+' have a product of '+ finalCross+'.';
+    console.log(cross);
+return cross;
+
 }
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 // You're done! Submit the link to the repo following the instructions in Canvas. Or, try out the stretch goal below...
 // Don't forget to create a new branch for your work on the next question, if you attempt it.
